@@ -1,0 +1,282 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+  
+}
+
+/*Componente modificar imagenes*/
+
+.contenedor-editor {
+  /*border:solid 2px orange;*/
+  display: flex;
+  flex-direction: column;
+  background-color: #7b68ee;
+  
+  
+}
+
+.contenedor-editor h1 {
+  width:100%;
+  padding: 2rem 1rem;
+  font-size: 200%;
+  
+  color: white;
+ 
+  font-weight: 100;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h3, h1 { text-shadow: black 0.1em 0.1em 0.2em}
+
+
+
+.contenedor-editor h3 {
+  color: white;
+  margin: 0.5rem auto;
+  /*margin-bottom: 3rem;*/
+  
+
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 100%;
+}
+
+.meme-elegido {
+  /*border: solid 2px violet;*/
+  /*display: flex;
+  justify-content: center;
+  align-items: flex-start;*/
+  overflow: hidden;
+  position: relative;
+  /*width: 40%;*/
+  width: 90%;
+  margin: 0.3rem auto;
+  /*max-height: 480px;*/
+  /*box-shadow: 0 0 20px 10px white ;*/
+  
+  
+  
+}
+
+.meme-elegido img {
+
+  /*border: solid 2px green;*/
+  width: 100%;
+  
+}
+
+.contenedor-estilos {
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*border: 2px red solid;*/
+  
+  
+}
+
+.input {
+  width: 90%;
+  margin: auto;
+  padding: 0.2rem;
+  
+}
+
+input {
+  accent-color: #7b68ee;
+ 
+}
+.cambios-meme, .cambios-meme-2 {
+  
+  /*border: 2px solid black;*/
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2% auto;
+  padding: 0.3rem;
+  width: 80%;
+  /*box-shadow: 0 0 20px 10px white ;*/
+  /*border:#7b68ee 3px outset;*/
+  background-color: rgb(255, 255, 255, 0.6);
+  color: rgb(21, 20, 20, 0.8);
+}
+
+.cambios-meme h4, .cambios-meme-2 h4 {
+  padding: 0.3rem;
+  margin: auto;
+}
+
+.position-text, .tamaño-letra, .color, .tipo-letra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:50%;
+ /* border: solid 2px violet;*/
+  padding: 0.2rem;
+}
+
+.contenedor-editor button {
+  margin: auto;
+  
+}
+
+.texto-meme, .texto-meme2 {
+  position: absolute;
+  word-wrap: break-word;
+  text-align: left;
+  font-weight: bold; 
+  left: 5%;
+  right: 5%;
+  top: 5%;
+}
+
+
+/*API*/
+.contenedor-api{
+  /*border: 2px solid red;*/
+  display: flex;
+  flex-wrap: wrap;
+  
+  background-color: #7b68ee;
+}
+
+.contenedor-api h3 {
+  margin: 2rem auto;
+  width: 100%;
+  color: white;
+}
+
+.api-meme {
+  /*border: 4px solid black;*/
+  border-radius: 10px;
+  margin: 0.5rem auto; 
+  width:200px;
+  height: 200px;
+  
+}
+
+.api-meme img {
+  /*border: solid 2px yellow;*/
+  
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  
+  
+  
+}
+
+@media screen and (min-width: 700px) {
+
+  .contenedor-editor {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*padding: 3.5rem;*/
+   
+    
+    
+  }
+  .contenedor-editor h1 {
+    font-size: 300%;
+    width: 100%;
+    padding: 1.5rem 1.5rem 1rem;
+  }
+  .contenedor-editor h3 {
+    font-size: 150%;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .meme-elegido {
+    
+    /*display: flex;
+    justify-content: center;
+    align-items: flex-start;*/
+    overflow: hidden;
+    position: relative;
+    width: 35%;
+    max-height: 380px;
+    margin: 0.3rem auto;
+      
+    
+  }
+
+  .meme-elegido img {
+    height: 100%;
+  }
+  .contenedor-estilos {
+    width: 55%;
+    max-height: 580px;  
+    margin: auto;
+  }
+  .cambios-meme, .cambios-meme-2 {
+  
+    margin: 2% auto;
+    padding: 0.3rem;
+    width: 100%;
+  }
+
+  /*API*/
+  .api-meme {
+    
+    margin: 1rem auto; 
+    width: 250px;
+    height: 250px;
+    
+  }
+
+ 
+  .contenedor-api h3 {
+    
+    font-size: 300%;
+    
+  }
+
+}
+
+
+@media screen and (min-width:960px) {
+  .contenedor-editor h1 {
+    
+    padding: 4rem 1.5rem 1rem;
+  }
+
+  .contenedor-editor h3 {
+    font-size: 150%;
+   
+    margin-bottom: 3rem;
+  }
+
+  .cambios-meme, .cambios-meme-2 {
+  
+    margin: 2% auto;
+    padding: 0.3rem;
+    width: 80%;
+    
+  } 
+  .meme-elegido {
+    max-height: 480px;
+    width: 40%;
+    margin-left: 5%;
+    
+    
+  }
+
+  .contenedor-estilos {
+    width: 50%;
+    margin: 0 0 2rem;
+    max-height: 480px;
+    margin-right: 5%;  
+  
+   
+  }
+
+  
+  
+}
