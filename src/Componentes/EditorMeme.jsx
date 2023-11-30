@@ -1,6 +1,4 @@
 
-//https://github.com/CeciliaBonfanti/editordememes-react/blob/main/src/componentes/Imgmemes.jsx
-// Ver el ultimo tambien color y faltaria letra
 
 import html2canvas from "html2canvas";
 import { useEffect, useState } from "react";
